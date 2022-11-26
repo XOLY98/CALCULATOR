@@ -1,0 +1,82 @@
+.container{
+    max-width:300px ;
+    margin:10px;
+}
+.h1{
+    font-style:italic;
+    color:deeppink;
+}
+#calculator{
+    text-align: right;
+    height:580px ;
+    line-height: 70px;
+    padding:5px;
+    font-size: 25px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.buttons{
+    display: grid;
+    grid-template :repeat(5,1fr) / repeat(4,1fr);
+    
+}
+.button > div{
+    border-top: 0.5px solid;
+    border-right: 1px solid;
+}
+.button{
+    border: 1px solid lightslategray;
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equal{
+    background-color:palevioletred ;
+    color: black;
+    grid-column: 3/ -1;
+    font-size: 50px;
+}
+#equal:hover{
+    background-color: darkgray;
+    color: black;
+}
+#AC{
+    background-color:palevioletred;
+    color: black;
+    grid-column: 1/ -3;
+    
+}
+#AC:hover{
+    background-color: darkgray;
+    color:black
+
+}
+#DEL{
+    background-color: palevioletred;
+    color: black;
+}
+#DEL:hover{
+    background-color: darkgray;
+    color: black;
+}
+.button:hover{
+    background-color:silver;
+    color:black;
+    transition: 0,5s ease-in-out;
+}
+#display{
+    height: 60px;
+    width:280px;
+    text-align: right;
+    border: 2px solid palevioletred ;
+   font-size: 2rem;
+   word-wrap:break-word;
+}
+@media screen and (max-width:310px){
+    .container{
+        scale:0.95;
+    }
+}
+    
+
