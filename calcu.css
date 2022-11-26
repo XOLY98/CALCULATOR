@@ -1,19 +1,30 @@
 .container{
     max-width:300px ;
-    margin:10px;
+    margin:auto;
+    
 }
-.h1{
-    font-style:italic;
-    color:deeppink;
+.heading{
+    font-style:normal;
+    margin: auto;
+    text-decoration: underline palevioletred;
 }
 #calculator{
     text-align: right;
-    height:580px ;
+    height:480px ;
     line-height: 70px;
     padding:5px;
     font-size: 25px;
     border: 2px solid grey;
-    border-radius: 5px;
+    border-radius: 9px;
+  
+}
+#display{
+    height: 65px;
+    width: 98%;
+    text-align: right;
+    border: 2px solid palevioletred ;
+   font-size: 2rem;
+   word-wrap:break-word;
 }
 .buttons{
     display: grid;
@@ -26,10 +37,15 @@
 }
 .button{
     border: 1px solid lightslategray;
-    line-height: 100px;
+    line-height: 80px;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
+}
+.button:hover{
+    background-color:silver;
+    color:black;
+    transition: 0,5s ease-in-out;
 }
 #equal{
     background-color:palevioletred ;
@@ -60,23 +76,15 @@
     background-color: darkgray;
     color: black;
 }
-.button:hover{
-    background-color:silver;
-    color:black;
-    transition: 0,5s ease-in-out;
-}
-#display{
-    height: 60px;
-    width:280px;
-    text-align: right;
-    border: 2px solid palevioletred ;
-   font-size: 2rem;
-   word-wrap:break-word;
-}
+
 @media screen and (max-width:310px){
     .container{
         scale:0.95;
     }
 }
-    
+@media screen and (max-width:310px){
+    /* #display {
+        scale:0,50;
+    } */
+}
 
