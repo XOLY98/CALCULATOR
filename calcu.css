@@ -14,7 +14,7 @@
     line-height: 70px;
     padding:5px;
     font-size: 25px;
-    border: 2px solid grey;
+    border: 5px solid grey;
     border-radius: 9px;
   
 }
@@ -23,6 +23,7 @@
     width: 97%;
     text-align: right;
     border: 2px solid palevioletred ;
+    border-radius: 4px;
    font-size: 2rem;
    word-wrap:break-word;
 }
@@ -37,6 +38,7 @@
 }
 .button{
     border: 1px solid lightslategray;
+    border-radius: 4px;
     line-height: 80px;
     text-align: center;
     font-size: 25px;
